@@ -1,0 +1,22 @@
+.App {
+    color: aqua;
+    font-family:  cursive;
+    height: 100%;
+    width: 100%;
+    background: #348cb2 url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd44-352-ae-1a.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=e096e5e10c05a8c84b450b5793d0afd5") center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.title{
+    display: flex;
+    justify-content: center;
+
+}
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+li{
+    padding-left: 20px;
+}

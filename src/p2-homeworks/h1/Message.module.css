@@ -1,0 +1,28 @@
+.MessageAll {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 80px 2fr;
+    grid-template-rows: 2fr;
+    width: 300px;
+    height: 80px;
+    opacity: 0.9;
+}
+.ava {
+    margin: 10px;
+    border-radius: 30px;
+    border: black 1px solid;
+}
+
+.mes {
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: darkgreen;
+    margin: 2px 5px;
+}
+.nic {
+    color: DarkOrchid;
+}
+.tim {
+    text-align: right;
+    color: darkgrey;
+}

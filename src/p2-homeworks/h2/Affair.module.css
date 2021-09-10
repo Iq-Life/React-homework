@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+    color: rgba(2, 218, 239, 0.84);
+}
+.item {
+    margin: 2px 7px;
+    width: 100px;
+}
+.low {
+    color: chartreuse;
+}
+.high {
+    color: darkred;
+}
+.middle {
+    color: orange;
+}
+.button {
+    border-radius: 10px;
+    background: darkgray;
+    padding: 5px;
+    margin: 2px;
+}
