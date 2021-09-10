@@ -13,8 +13,8 @@ function App() {
                 <li><HW1/></li>
                 <h2>Homework #2</h2>
                 <li><HW2/></li>
-                <h2>Homework #3</h2>
-                <li><HW3/></li>
+                {/*<h2>Homework #3</h2>
+                <li><HW3/></li>*/}
             </ul>
 
 
