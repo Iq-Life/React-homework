@@ -28,7 +28,13 @@ const Greeting: React.FC<GreetingPropsType> = (
                 onKeyPress={onEnter}
                 onFocus={resetError}
             />
-            <button onClick={addUser} className={s.button} disabled={(!!error)}>add</button>
+            <button onClick={addUser} className={s.button} disabled={(!!error)}>
+                <span className={`${s.button_line_top} ${s.button_line}`}/>
+                <span className={`${s.button_line_right} ${s.button_line}`}/>
+                <span className={`${s.button_line_bottom} ${s.button_line}`}/>
+                <span className={`${s.button_line_left} ${s.button_line}`}/>
+                add
+            </button>
             <span>{totalUsers}</span>
         </div>
     )
