@@ -1,7 +1,168 @@
-.default {
-
+.button {
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    font-family: Consolas, cursive;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s;/* плавность анимации */
+    cursor: pointer;
 }
 
+.button_line {
+    position: absolute;
+    display: block;
+}
+.button_line_top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+.button:hover .button_line_top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; /*задержка анимации*/
+}
+.button_line_right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+.button:hover .button_line_right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s; /*задержка анимации*/
+}
+.button_line_bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+.button:hover .button_line_bottom{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; /*задержка анимации*/
+}
+.button_line_left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #2196f3);
+}
+.button:hover .button_line_left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s; /*задержка анимации*/
+}
+.button:hover{
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    background-color: #2196f3;
+    color: #333;
+    transition-delay: 1s;
+}
 .red {
-    background: red;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    display: inline-block;
+    font-family: Consolas, cursive;
+    color: darkred;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s;/* плавность анимации */
+    cursor: pointer;
+}
+.red_button_line {
+    position: absolute;
+    display: block;
+}
+.red_button_line_top {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, darkred);
+}
+.red:hover .red_button_line_top{
+    left: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; /*задержка анимации*/
+}
+.red_button_line_right {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, darkred);
+}
+.red:hover .red_button_line_right{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0s; /*задержка анимации*/
+}
+.red_button_line_bottom {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, darkred);
+}
+.red:hover .red_button_line_bottom{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; /*задержка анимации*/
+}
+.red_button_line_left {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, darkred);
+}
+.red:hover .red_button_line_left{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0s; /*задержка анимации*/
+}
+.red:hover{
+    box-shadow: 0 0 10px darkred, 0 0 40px darkred, 0 0 80px darkred;
+    background-color: darkred;
+    color: #333;
+    transition-delay: 1s;
+}
+.button:disabled {
+    cursor: not-allowed;
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    font-family: Consolas, cursive;
+    color: grey;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+}
+.button:hover:disabled{
+    box-shadow: 0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
+    background-color: gray;
+    color: #333;
+    transition-delay: 1s;
 }
