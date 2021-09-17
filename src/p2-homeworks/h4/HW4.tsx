@@ -10,7 +10,7 @@ function HW4() {
 
     const showAlert = () => {
         if (error) {
-            alert('введите текст...')
+            alert('Внимание ошибка!')
         } else {
             alert(text) // если нет ошибки показать текст
         }
@@ -21,38 +21,33 @@ function HW4() {
 
     return (
         <div>
-            <hr/>
-            homeworks 4
-
             <div className={s.column}>
                 <SuperInputText
                     value={text}
                     onChangeText={setText}
                     onEnter={showAlert}
                     error={error}
-                    // spanClassName={s.testSpanError}
+                    spanClassName={s.testSpanError}
                 />
 
                 <SuperInputText
-                    className={s.blue} // проверьте, рабоет ли смешивание классов
+                   className={s.blue} // проверьте, рабоет ли смешивание классов
                 />
 
                 {/*----------------------------------------------------*/}
 
-                <SuperButton>
-                    default
-                </SuperButton>
+                <SuperButton title={"default"}/>
 
                 <SuperButton
+                    title={"delete"}
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
                 >
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>
 
-                <SuperButton disabled>
-                    disabled
-                </SuperButton>
+                <SuperButton title={"disabled"} disabled={true}/>
+
 
                 {/*----------------------------------------------------*/}
 
@@ -67,12 +62,12 @@ function HW4() {
                 <SuperCheckbox checked={checked} onChange={testOnChange}/>
             </div>
 
-            <hr/>
+
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperInputText/>*/}
             {/*<AlternativeSuperButton/>*/}
             {/*<AlternativeSuperCheckbox/>*/}
-            <hr/>
+
         </div>
     )
 }
