@@ -20,3 +20,14 @@
 li{
     padding-left: 20px;
 }
+.errorPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 80px;
+}
+.errorCat{
+    color: black;
+    text-shadow: 0 0 2px white;
+}

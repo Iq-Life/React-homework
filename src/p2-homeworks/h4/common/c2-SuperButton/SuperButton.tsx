@@ -23,7 +23,6 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
     const finalClassNameSpanLeft= red ? `${s.red_button_line_left} ${s.red_button_line}` : `${s.button_line_left} ${s.button_line}`
 
 
-
     return (
         <button className={finalClassNameButton}
             {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)

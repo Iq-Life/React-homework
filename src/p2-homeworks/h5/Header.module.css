@@ -1,0 +1,52 @@
+.headerMenu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.menuIcon span,
+.menuIcon::before,
+.menuIcon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: white;
+}
+
+.menuIcon::before,
+.menuIcon::after {
+    content: "";
+}
+
+.menuIcon::before {
+    top: 0;
+}
+
+.menuIcon::after {
+    bottom: 0;
+}
+
+.menuIcon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+}
+
+.menuBody {
+    position: fixed;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 3px 15px;
+    transition: left 0.3s ease 0s;
+    transform: translate(-100%,0px);
+}
+.menuBodyActive{
+    transform: translate(0,0px);
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
