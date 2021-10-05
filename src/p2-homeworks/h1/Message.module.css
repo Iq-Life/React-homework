@@ -1,5 +1,4 @@
 .MessageAll {
-    background-color: azure;
     display: grid;
     grid-template-columns: 80px 2fr;
     grid-template-rows: 2fr;
@@ -21,6 +20,9 @@
 }
 .nic {
     color: DarkOrchid;
+}
+.message{
+    margin-left: 15px;
 }
 .tim {
     text-align: right;

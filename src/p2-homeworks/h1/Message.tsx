@@ -13,7 +13,7 @@ function Message(props: MessageDataType) {
             />
             <div className={style.mes}>
                 <div className={style.nic}>{props.name}</div>
-                {props.message}
+                <div className={style.message}>{props.message}</div>
                 <div className={style.tim}>{props.time}</div>
             </div>
         </div>
