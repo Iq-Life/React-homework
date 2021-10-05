@@ -28,7 +28,7 @@
 }
 .button:hover .button_line_top{
     left: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0.25s; /*задержка анимации*/
 }
 .button_line_right {
@@ -40,7 +40,7 @@
 }
 .button:hover .button_line_right{
     top: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0s; /*задержка анимации*/
 }
 .button_line_bottom {
@@ -52,7 +52,7 @@
 }
 .button:hover .button_line_bottom{
     right: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0.25s; /*задержка анимации*/
 }
 .button_line_left {
@@ -64,14 +64,14 @@
 }
 .button:hover .button_line_left{
     bottom: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0s; /*задержка анимации*/
 }
 .button:hover{
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
     background-color: #2196f3;
     color: #333;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 .red {
     margin: 5px;
@@ -102,7 +102,7 @@
 }
 .red:hover .red_button_line_top{
     left: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0.25s; /*задержка анимации*/
 }
 .red_button_line_right {
@@ -114,7 +114,7 @@
 }
 .red:hover .red_button_line_right{
     top: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0s; /*задержка анимации*/
 }
 .red_button_line_bottom {
@@ -126,7 +126,7 @@
 }
 .red:hover .red_button_line_bottom{
     right: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0.25s; /*задержка анимации*/
 }
 .red_button_line_left {
@@ -138,14 +138,14 @@
 }
 .red:hover .red_button_line_left{
     bottom: 100%;
-    transition: 1s;
+    transition: 0.5s;
     transition-delay: 0s; /*задержка анимации*/
 }
 .red:hover{
     box-shadow: 0 0 10px darkred, 0 0 40px darkred, 0 0 80px darkred;
     background-color: darkred;
     color: #333;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }
 .button:disabled {
     cursor: not-allowed;
@@ -164,5 +164,5 @@
     box-shadow: 0 0 10px gray, 0 0 40px gray, 0 0 80px gray;
     background-color: gray;
     color: #333;
-    transition-delay: 1s;
+    transition-delay: 0.5s;
 }

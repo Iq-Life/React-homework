@@ -1,5 +1,5 @@
 .headerMenu {
-    display: block;
+    display: inline-block;;
     position: relative;
     width: 30px;
     height: 18px;
@@ -13,7 +13,6 @@
     position: absolute;
     height: 10%;
     width: 100%;
-    transition: all 0.3s ease 0s;
     background-color: white;
 }
 
@@ -36,17 +35,24 @@
 }
 
 .menuBody {
+    transform: translate(-100%,0px);
     position: fixed;
     background-color: rgba(0,0,0, 0.8);
     padding: 3px 15px;
-    transition: left 0.3s ease 0s;
-    transform: translate(-100%,0px);
+    transition-duration: 500ms;
 }
 .menuBodyActive{
     transform: translate(0,0px);
+    position: fixed;
+    background-color: rgba(0,0,0, 0.8);
+    padding: 3px 15px;
+    transition-duration: 500ms;
 }
 .list {
     display: flex;
     flex-direction: row;
     list-style-type: none;
+}
+.link {
+    text-decoration: none;
 }

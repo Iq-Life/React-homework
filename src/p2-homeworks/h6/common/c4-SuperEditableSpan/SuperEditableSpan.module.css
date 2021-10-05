@@ -1,0 +1,6 @@
+.span{
+    display: inline-block;
+    color: rgba(2, 218, 239, 0.84);
+    padding-top: 2px;
+    height: 20px;
+}

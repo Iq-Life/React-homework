@@ -4,6 +4,7 @@ import HW2 from '../../h2/HW2'
 import HW3 from '../../h3/HW3'
 import HW4 from '../../h4/HW4'
 import s from "../../../p1-main/m1-ui/u1-app/App.module.css";
+import HW6 from "../../h6/HW6";
 
 function PreJunior() {
     return (
@@ -18,11 +19,10 @@ function PreJunior() {
                 <li><HW3/></li>
                 <h2>Homework #4</h2>
                 <li><HW4/></li>
-                <h2>Homework #5</h2>
-                {/*<li><HW5/></li>*/}
+                <h2>Homework #6</h2>
+                <li><HW6/></li>
             </ul>
-            {/*<HW6/>*/}
-
+            <hr style={{margin: "0"}}/>
         </div>
     )
 }

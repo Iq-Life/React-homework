@@ -20,7 +20,7 @@ const Greeting: React.FC<GreetingPropsType> = (
 
     return (
         <div>
-            <div className={s.errorText}><span>{error}</span></div>
+            <div><span className={s.errorText}>{error}</span></div>
             <input
                 value={name}
                 className={inputClass}

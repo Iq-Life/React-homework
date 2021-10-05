@@ -15,13 +15,13 @@ function Header() {
             <nav className={styleMenuBody}>
                 <ul className={s.list}>
                     <li>
-                        <NavLink to='/pre-junior' activeClassName={s.activeLink}>Pre_Junior</NavLink>
+                        <NavLink to='/pre-junior' activeClassName={s.activeLink} className={s.link}>Pre_Junior</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/junior' activeClassName={s.activeLink}>Junior</NavLink>
+                        <NavLink to='/junior' activeClassName={s.activeLink} className={s.link}>Junior</NavLink>
                     </li>
                     <li>
-                        <NavLink to='/junior-plus' activeClassName={s.activeLink}>Junior+</NavLink>
+                        <NavLink to='/junior-plus' activeClassName={s.activeLink} className={s.link}>Junior+</NavLink>
                     </li>
 
                 </ul>
