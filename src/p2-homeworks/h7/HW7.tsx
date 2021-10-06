@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import SuperSelect from './common/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
+
 const arr = ['x', 'y', 'z']
 
 function HW7() {
@@ -25,7 +26,6 @@ function HW7() {
                 />
             </div>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperSelect/>*/}
             {/*<AlternativeSuperRadio/>*/}
         </div>
     )
