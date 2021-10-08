@@ -2,8 +2,12 @@
     display: flex;
 }
 .list{
-    padding-left: 10px;
     display: flex;
     justify-content: space-between;
-    width: 233px;
+}
+.allList{
+    background-color: rgba(0,0,0, 0.8);
+    width: 235px;
+    padding: 10px;
+    color: darkorchid;
 }

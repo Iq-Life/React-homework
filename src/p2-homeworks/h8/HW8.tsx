@@ -34,7 +34,7 @@ function HW8() {
 
     return (
         <div>
-            <div>
+            <div className={s.allList}>
                 {finalPeople}
             </div>
 

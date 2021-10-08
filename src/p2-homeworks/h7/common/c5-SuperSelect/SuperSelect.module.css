@@ -1,9 +1,10 @@
 .select {
     width: 100px;
-    color: darkgreen;
-    background-color: rgba(0,0,0, 0.8);
+    color: black;
+    background-color: rgba(131,266,151, 0.5);
     border: darkgreen 1px solid;
     border-radius: 5px 5px 0 0;
+    outline: none;
     padding: 1px 5px;
     appearance: none;
     background-image: url("https://cdn.icon-icons.com/icons2/510/PNG/128/arrow-down-a_icon-icons.com_50480.png");
@@ -15,7 +16,7 @@
     border: forestgreen 1px solid;
 }
 .select:active {
-    border: forestgreen 1px solid;
+    border:  1px solid;
 }
 .select:checked {
     border: forestgreen 1px solid;
