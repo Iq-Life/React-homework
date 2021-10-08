@@ -1,11 +1,9 @@
-.allDiv{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
 .buttons{
     display: flex;
 }
 .list{
-    margin-left: 90px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 233px;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import s from "../../../p1-main/m1-ui/u1-app/App.module.css";
 import HW7 from "../../h7/HW7";
 import HW8 from "../../h8/HW8";
+import HW9 from "../../h9/HW9";
 
 function Junior() {
     return (
@@ -12,6 +13,8 @@ function Junior() {
                 <li><HW7/></li>
                 <h4>Homework #8</h4>
                 <li><HW8/></li>
+                <h4>Homework #9</h4>
+                <li><HW9/></li>
 
             </ul>
         </div>

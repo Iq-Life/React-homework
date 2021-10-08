@@ -22,8 +22,9 @@ function HW8() {
     const [people, setPeople] = useState<UserType[]>(initialPeople)
 
     const finalPeople = people.map((p: UserType) => (
-        <div key={p._id}>
-            {p.name}, {p.age}
+        <div className={s.list} key={p._id}>
+            <div>{p.name}</div>
+            <div>{p.age}</div>
         </div>
     ))
 
@@ -32,10 +33,11 @@ function HW8() {
     const check = () => setPeople(homeWorkReducer(initialPeople, {type: "check", age: 18}))
 
     return (
-        <div className={s.allDiv}>
-            <div className={s.list}>
+        <div>
+            <div>
                 {finalPeople}
             </div>
+
             <div className={s.buttons}>
                 <div><SuperButton title={"sort up"} onClick={sortUp}/></div>
                 <div><SuperButton title={"sort down"} onClick={sortDown}/></div>
