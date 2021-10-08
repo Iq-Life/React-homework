@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-homework/static/css/main.e9a162cf.chunk.css",
-    "main.js": "/React-homework/static/js/main.33a41c4d.chunk.js",
-    "main.js.map": "/React-homework/static/js/main.33a41c4d.chunk.js.map",
+    "main.css": "/React-homework/static/css/main.89ce6f70.chunk.css",
+    "main.js": "/React-homework/static/js/main.52ad6587.chunk.js",
+    "main.js.map": "/React-homework/static/js/main.52ad6587.chunk.js.map",
     "runtime-main.js": "/React-homework/static/js/runtime-main.eb4c2248.js",
     "runtime-main.js.map": "/React-homework/static/js/runtime-main.eb4c2248.js.map",
-    "static/js/2.cf63202f.chunk.js": "/React-homework/static/js/2.cf63202f.chunk.js",
-    "static/js/2.cf63202f.chunk.js.map": "/React-homework/static/js/2.cf63202f.chunk.js.map",
+    "static/js/2.ca22ae84.chunk.js": "/React-homework/static/js/2.ca22ae84.chunk.js",
+    "static/js/2.ca22ae84.chunk.js.map": "/React-homework/static/js/2.ca22ae84.chunk.js.map",
     "index.html": "/React-homework/index.html",
-    "static/css/main.e9a162cf.chunk.css.map": "/React-homework/static/css/main.e9a162cf.chunk.css.map",
-    "static/js/2.cf63202f.chunk.js.LICENSE.txt": "/React-homework/static/js/2.cf63202f.chunk.js.LICENSE.txt"
+    "static/css/main.89ce6f70.chunk.css.map": "/React-homework/static/css/main.89ce6f70.chunk.css.map",
+    "static/js/2.ca22ae84.chunk.js.LICENSE.txt": "/React-homework/static/js/2.ca22ae84.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.eb4c2248.js",
-    "static/js/2.cf63202f.chunk.js",
-    "static/css/main.e9a162cf.chunk.css",
-    "static/js/main.33a41c4d.chunk.js"
+    "static/js/2.ca22ae84.chunk.js",
+    "static/css/main.89ce6f70.chunk.css",
+    "static/js/main.52ad6587.chunk.js"
   ]
 }
