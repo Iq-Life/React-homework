@@ -23,6 +23,7 @@ function HW7() {
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
+
                 />
             </div>
             {/*для личного творчества, могу проверить*/}

@@ -1,16 +1,17 @@
 import {loadingReducer} from './loadingReducer'
 import {combineReducers, createStore} from "redux";
+import {themeReducer} from "../../h12/bll/themeReducer";
 
- const reducers = combineReducers({
-     loadingPage: loadingReducer,
+const reducers = combineReducers({
+    loadingPage: loadingReducer,
+    themeReducer: themeReducer
+})
 
- })
+const store = createStore(reducers)
 
- const store = createStore(reducers)
+export default store
 
- export default store
+export type AppStoreType = ReturnType<typeof reducers>
 
- export type AppStoreType = ReturnType<typeof reducers>
-
- // @ts-ignore
- window.store = store // for dev
+// @ts-ignore
+window.store = store // for dev
