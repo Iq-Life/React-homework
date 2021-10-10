@@ -7,6 +7,9 @@ function App() {
         <div className={s.App}>
             <div className={s.title}><h1>React homeworks:</h1></div>
             <HW5/>
+        <br/>
+        <br/>
+
         </div>
     );
 }

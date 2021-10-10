@@ -14,7 +14,7 @@
 }
 
 .checkRadio:checked {
-    background: darkslategrey;
+    background: #90ee90;
 }
 
 .checkRadio:focus {
