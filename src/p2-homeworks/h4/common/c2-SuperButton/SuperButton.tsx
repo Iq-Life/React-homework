@@ -6,7 +6,7 @@ type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonE
 
 type SuperButtonPropsType = DefaultButtonPropsType & {
     red?: boolean
-    title:string
+    title: string
 }
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
@@ -17,15 +17,15 @@ const SuperButton: React.FC<SuperButtonPropsType> = (
 ) => {
 
     const finalClassNameButton = `${red ? s.red : s.button} ${className}`
-    const finalClassNameSpanTop= red ? `${s.red_button_line_top} ${s.red_button_line}` : `${s.button_line_top} ${s.button_line}`
-    const finalClassNameSpanRight= red ? `${s.red_button_line_right} ${s.red_button_line}` : `${s.button_line_right} ${s.button_line}`
-    const finalClassNameSpanBottom= red ? `${s.red_button_line_bottom} ${s.red_button_line}` : `${s.button_line_bottom} ${s.button_line}`
-    const finalClassNameSpanLeft= red ? `${s.red_button_line_left} ${s.red_button_line}` : `${s.button_line_left} ${s.button_line}`
+    const finalClassNameSpanTop = red ? `${s.red_button_line_top} ${s.red_button_line}` : `${s.button_line_top} ${s.button_line}`
+    const finalClassNameSpanRight = red ? `${s.red_button_line_right} ${s.red_button_line}` : `${s.button_line_right} ${s.button_line}`
+    const finalClassNameSpanBottom = red ? `${s.red_button_line_bottom} ${s.red_button_line}` : `${s.button_line_bottom} ${s.button_line}`
+    const finalClassNameSpanLeft = red ? `${s.red_button_line_left} ${s.red_button_line}` : `${s.button_line_left} ${s.button_line}`
 
 
     return (
         <button className={finalClassNameButton}
-            {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
+                {...restProps} // отдаём кнопке остальные пропсы если они есть (children там внутри)
         >
             <span className={finalClassNameSpanTop}/>
             <span className={finalClassNameSpanRight}/>

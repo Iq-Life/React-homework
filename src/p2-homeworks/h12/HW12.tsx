@@ -5,7 +5,7 @@ import {AppStoreType} from "../h10/bll/store";
 import SuperRadio from "../h7/common/c6-SuperRadio/SuperRadio";
 import {changeThemeAC, ThemesType} from "./bll/themeReducer";
 
-const themes:Array<ThemesType> = ['dark', 'red', 'some']
+const themes: Array<ThemesType> = ['dark', 'red', 'some']
 
 function HW12() {
     const [value, onChangeOption] = useState<string>(themes[1])
@@ -13,7 +13,7 @@ function HW12() {
     const ThemeState = useSelector<AppStoreType, ThemesType>(state => state.themeReducer.theme)
     const dispatch = useDispatch()
 
-    const onChangeCallback= (value: ThemesType) =>{
+    const onChangeCallback = (value: ThemesType) => {
         dispatch(changeThemeAC(value))
     }
 

@@ -22,7 +22,6 @@ function PreJunior() {
                 <h4>Homework #6</h4>
                 <li><HW6/></li>
             </ul>
-            <hr style={{margin: "0"}}/>
         </div>
     )
 }

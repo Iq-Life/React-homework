@@ -2,9 +2,11 @@ import React, {useState} from 'react'
 import s from './Header.module.css'
 import {NavLink} from "react-router-dom";
 
+
 function Header() {
     let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
-    const styleMenuBody = accordionCollapsed ? s.menuBody_active : s.menuBody
+    const styleMenuBody = accordionCollapsed ? "menuBodyActive" : ''
+
 
     /*`${s.menuBody} + ${s.menuBody_active}`*/
     return (
@@ -12,7 +14,7 @@ function Header() {
             <div className={s.menuIcon} onClick={() => setAccordionCollapsed(!accordionCollapsed)}>
                 <span/>
             </div>
-            <nav className={styleMenuBody}>
+            <nav className={`${s.menuBody} ${accordionCollapsed ? s.menuBodyActive : ''}`}>
                 <ul className={s.list}>
                     <li>
                         <NavLink to='/pre-junior' activeClassName={s.activeLink} className={s.link}>Pre_Junior</NavLink>

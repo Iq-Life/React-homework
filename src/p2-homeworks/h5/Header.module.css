@@ -35,18 +35,14 @@
 }
 
 .menuBody {
-    transform: translate(-100%,0px);
+    transform: translateX(-100%);
     position: fixed;
     background-color: rgba(0,0,0, 0.8);
     padding: 3px 15px;
-    transition-duration: 500ms;
+    transition: transform 500ms ease;
 }
 .menuBodyActive{
-    transform: translate(0,0px);
-    position: fixed;
-    background-color: rgba(0,0,0, 0.8);
-    padding: 3px 15px;
-    transition-duration: 500ms;
+    transform: translateX(0);
 }
 .list {
     display: flex;
