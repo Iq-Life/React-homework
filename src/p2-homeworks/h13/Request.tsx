@@ -8,7 +8,6 @@ import {RequestApi} from "./Request-api";
 
 
 function Request() {
-    const [alert, setAlert] = useState<string>("")
     const SuccessStatus = useSelector<AppStoreType, InitialStateType>(state => state.requestReducer)
     const dispatch = useDispatch()
     const [errorText, setErrorText] = useState<string | null>(null)
@@ -20,20 +19,20 @@ function Request() {
                     setErrorText(response.data.errorText)
                 })
         } else {
-            setAlert("checkbox not pressed")
+            setErrorText("checkbox not pressed")
         }
     }
 
     const onChangeCallback = (value: boolean) => {
         dispatch(setSuccess(value))
-        setAlert("")
+        setErrorText("")
     }
 
     return (
         <div>
             <SuperCheckbox onChangeChecked={onChangeCallback}/>
             <SuperButton onClick={clickButton} title={"Send"}/>
-            {errorText ? <div>{errorText}</div> :<div>{alert}</div>}
+            {errorText ? <div>{errorText}</div> :<div/>}
         </div>
     )
 }
