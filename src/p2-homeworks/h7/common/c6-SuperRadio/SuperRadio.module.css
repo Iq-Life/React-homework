@@ -13,9 +13,15 @@
     border: 2px solid lawngreen;
 }
 
+.checkRadio:checked {
+    background: #90ee90;
+    color: #90ee90;
+}
+
+
 .checkRadio:focus {
     border: 2px solid forestgreen;
-    background-color: #90ee90
+    /*background-color: #90ee90*/
 }
 
 .labelRadio {

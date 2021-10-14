@@ -8,11 +8,6 @@ const arr = ['x', 'y', 'z']
 function HW7() {
     const [value, setValue] = useState<string>(arr[1])
 
-    //const onChangeOption = (radioValue: string) => {
-    //    setValue(radioValue)
-   // }
-
-
     return (
         <div>
             <div>

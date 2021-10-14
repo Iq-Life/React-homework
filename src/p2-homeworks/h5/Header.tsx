@@ -1,14 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
 import s from './Header.module.css'
 import {NavLink} from "react-router-dom";
 
 
 function Header() {
-    let [accordionCollapsed, setAccordionCollapsed] = useState<boolean>(false)
-    const styleMenuBody = accordionCollapsed ? "menuBodyActive" : ''
 
-
-    /*`${s.menuBody} + ${s.menuBody_active}`*/
     return (<div style={{display: "flex", justifyContent: "flex-end"}}>
             <div className={s.headerMenu}>
                 <div className={s.block}/>
