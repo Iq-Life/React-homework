@@ -1,11 +1,17 @@
 .headerMenu {
-    display: inline-block;;
-    position: relative;
-    width: 30px;
-    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    justify-items: center;
     cursor: pointer;
+    transform: translateX(+83%);
+    position: fixed;
+    background-color: rgba(0,0,0, 0.8);
+   margin: 0;
+    padding: 0;
+    transition: transform 500ms ease;
 }
-
+/*
 .menuIcon span,
 .menuIcon::before,
 .menuIcon::after {
@@ -40,8 +46,8 @@
     background-color: rgba(0,0,0, 0.8);
     padding: 3px 15px;
     transition: transform 500ms ease;
-}
-.menuBodyActive{
+}*/
+.headerMenu:hover{
     transform: translateX(0);
 }
 .list {
@@ -51,4 +57,20 @@
 }
 .link {
     text-decoration: none;
+}
+.link:hover {
+    color: cyan;
+}
+.block{
+    width: 60px;
+    height: 60px;
+    background-image: url("../../icons/menu.svg");
+    background-repeat: no-repeat;
+    background-color: rgba(120,120,120, 0.8);
+
+    border: none;
+
+}
+.block:hover .headerMenu{
+    transform: translateX(0);
 }

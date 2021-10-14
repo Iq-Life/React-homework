@@ -1,5 +1,5 @@
 import React, {ChangeEvent, InputHTMLAttributes, DetailedHTMLProps} from 'react'
-import s from './SuperRadio.module.css'
+import './SuperRadio.css'
 import {ThemesType} from "../../../h12/bll/themeReducer";
 
 type DefaultRadioPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
@@ -19,32 +19,32 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         ...restProps
     }
 ) => {
+
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         onChange && onChange(e)
         onChangeOption && onChangeOption(e.currentTarget.value)
-        // onChangeCall && onChangeCall('red')
     }
 
-    const onClickHandler = (color:ThemesType) => {
+   /* const onClickHandler = (color: ThemesType) => {
         onChangeCall && onChangeCall(color)
-
-    }
+    }*/
 
 
     const mappedOptions: any[] = options ? options.map((o, i) => (
-        <label className={s.labelRadio} key={name + '-' + i}>
+        <label className={'labelRadio'} key={name + '-' + i}>
             <input
-                className={s.checkRadio}
+                className={'checkRadio'}
                 type={'radio'}
                 name={name}
                 checked={o === value}
                 value={o}
                 onChange={onChangeCallback}
-                onClick={() => onClickHandler(o as ThemesType)}
+                /*onClick={() => onClickHandler(o as ThemesType)}*/
             />
             {o}
         </label>
     )) : []
+
 
     return (
         <>

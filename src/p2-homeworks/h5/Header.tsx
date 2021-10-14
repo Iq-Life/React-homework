@@ -9,12 +9,9 @@ function Header() {
 
 
     /*`${s.menuBody} + ${s.menuBody_active}`*/
-    return (
-        <div className={s.headerMenu}>
-            <div className={s.menuIcon} onClick={() => setAccordionCollapsed(!accordionCollapsed)}>
-                <span/>
-            </div>
-            <nav className={`${s.menuBody} ${accordionCollapsed ? s.menuBodyActive : ''}`}>
+    return (<div style={{display: "flex", justifyContent: "flex-end"}}>
+            <div className={s.headerMenu}>
+                <div className={s.block}/>
                 <ul className={s.list}>
                     <li>
                         <NavLink to='/pre-junior' activeClassName={s.activeLink} className={s.link}>Pre_Junior</NavLink>
@@ -25,9 +22,8 @@ function Header() {
                     <li>
                         <NavLink to='/junior-plus' activeClassName={s.activeLink} className={s.link}>Junior+</NavLink>
                     </li>
-
                 </ul>
-            </nav>
+            </div>
         </div>
     )
 }

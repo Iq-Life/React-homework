@@ -6,7 +6,12 @@ import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 const arr = ['x', 'y', 'z']
 
 function HW7() {
-    const [value, onChangeOption] = useState<string>(arr[1])
+    const [value, setValue] = useState<string>(arr[1])
+
+    //const onChangeOption = (radioValue: string) => {
+    //    setValue(radioValue)
+   // }
+
 
     return (
         <div>
@@ -14,7 +19,7 @@ function HW7() {
                 <SuperSelect
                     options={arr}
                     value={value}
-                    onChangeOption={onChangeOption}
+                    onChangeOption={setValue}
                 />
             </div>
             <div>
@@ -22,7 +27,7 @@ function HW7() {
                     name={'radio'}
                     options={arr}
                     value={value}
-                    onChangeOption={onChangeOption}
+                    onChangeOption={setValue}
 
                 />
             </div>
