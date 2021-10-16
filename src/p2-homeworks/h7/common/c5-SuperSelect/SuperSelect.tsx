@@ -15,7 +15,7 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
         ...restProps
     }
 ) => {
-    const mappedOptions = options ? options.map((x, y)=>(
+    const mappedOptions = options ? options.map((x, y) => (
         <option className={s.option} key={x + '-' + y} value={x}>{x}</option>
     )) : []
 
@@ -25,7 +25,10 @@ const SuperSelect: React.FC<SuperSelectPropsType> = (
     }
 
     return (
-        <select className={s.select} onChange={onChangeCallback} {...restProps}>
+        <select className={s.select}
+                onChange={onChangeCallback}
+                {...restProps}
+        >
             {mappedOptions}
         </select>
     )
