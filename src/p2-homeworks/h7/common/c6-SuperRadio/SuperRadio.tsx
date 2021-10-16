@@ -29,15 +29,12 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         onChangeCall && onChangeCall(color)
     }
 
-    const finalClassName = s.checkRadio
-
     const mappedOptions: any[] = options ? options.map((o, i) => (
         <label key={name + '-' + i} className={s.labelRadio}>
             <input
-                className={finalClassName}
+                className={s.checkRadio}
                 type={'radio'}
                 name={name}
-                checked={o === value}
                 value={o}
                 onChange={onChangeCallback}
                 onClick={() => onClickHandler(o as ThemesType)}

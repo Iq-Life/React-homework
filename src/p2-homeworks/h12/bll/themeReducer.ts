@@ -1,5 +1,5 @@
 const initState: InitStateType = {
-    theme: 'some'
+    theme: 'red'
 };
 
 export const themeReducer = (state = initState, action: ActionCreatorType): InitStateType => {
