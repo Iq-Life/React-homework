@@ -12,17 +12,17 @@ function Junior() {
         <div>
             <div className={s.title}><h2>Junior</h2></div>
             <ul className={s.ul}>
-                <h4>Homework #7</h4>
+                <h4>Task #7 Select</h4>
                 <li><HW7/></li>
-                <h4>Homework #8</h4>
+                <h4>Task #8 list</h4>
                 <li><HW8/></li>
-                <h4>Homework #9</h4>
+                <h4>Task #9 Time</h4>
                 <li><HW9/></li>
-                <h4>Homework #10</h4>
+                <h4>Task #10</h4>
                 <li><HW10/></li>
-                <h4>Homework #11</h4>
+                <h4>Task #11</h4>
                 <li><HW11/></li>
-                <h4>Homework #12</h4>
+                <h4>Task #12</h4>
                 <li><HW12/></li>
 
             </ul>

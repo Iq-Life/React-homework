@@ -11,15 +11,15 @@ function PreJunior() {
         <div>
             <div className={s.title}><h2>PreJunior</h2></div>
             <ul className={s.ul}>
-                <h4>Homework #1</h4>
+                <h4>Task #1</h4>
                 <li><HW1/></li>
-                <h4>Homework #2</h4>
+                <h4>Task #2 list</h4>
                 <li><HW2/></li>
-                <h4>Homework #3</h4>
+                <h4>Task #3 input</h4>
                 <li><HW3/></li>
-                <h4>Homework #4</h4>
+                <h4>Task #4</h4>
                 <li><HW4/></li>
-                <h4>Homework #6</h4>
+                <h4>Task #6</h4>
                 <li><HW6/></li>
             </ul>
         </div>

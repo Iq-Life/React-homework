@@ -6,7 +6,7 @@ function JuniorPlus() {
     return (
         <div>
             <ul className={s.ul}>
-                <h2>Homework #13</h2>
+                <h2>Task #13 server request</h2>
                 <li><HW13/></li>
             </ul>
         </div>
